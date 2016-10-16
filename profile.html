@@ -1,0 +1,233 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/background.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes">
+
+</head>
+
+<body class="green">
+
+    <form class="container">
+        <h3 class="h3">PROFILE</h3>
+        <label class="photo-upload" for="image-upload">
+            <p>UPLOAD IMAGE</p>
+        </label>
+        <input type="file" name="photo-upload" id="image-upload" class="image-upload">
+        <input name="first-name" placeholder="FIRST NAME" type="text" class="input">
+        <input name="last-name" placeholder="LAST NAME" type="text" class="input">
+        <input name="email" placeholder="EMAIL" type="email" class="input">
+        <input name="password" placeholder="PASSWORD" type="password" class="input">
+        <input name="confirm_password" placeholder="RE-ENTER PASSWORD" type="password" class="input">
+        <textarea name="description" placeholder="DESCRIBE YOURSELF" class="input"></textarea>
+
+        <h3 class="h3">CITY</h3>
+        <div class="city-select">
+            <div class="row white-hover" onclick="setlocation('New York, NY')" id="location">
+                <div class="col-xs-8">New York
+                </div>
+                <div class="col-xs-4">NY
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Los Angeles, CA')" id="location">
+                <div class="col-xs-8">Los Angeles
+                </div>
+                <div class="col-xs-4">CA
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Chicago, MI')" id="location">
+                <div class="col-xs-8">Chicago
+                </div>
+                <div class="col-xs-4">MI
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Houston, TX')" id="location">
+                <div class="col-xs-8">Houston
+                </div>
+                <div class="col-xs-4">TX
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Philadelphia, PA')" id="location">
+                <div class="col-xs-8">Philadelphia
+                </div>
+                <div class="col-xs-4">PA
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Phoenix, AZ')" id="location">
+                <div class="col-xs-8">Phoenix
+                </div>
+                <div class="col-xs-4">AZ
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('San Antonio, TX')" id="location">
+                <div class="col-xs-8">San Antonio
+                </div>
+                <div class="col-xs-4">TX
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('San Diego, CA')" id="location">
+                <div class="col-xs-8">San Diego
+                </div>
+                <div class="col-xs-4">CA
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Dallas, TX')" id="location">
+                <div class="col-xs-8">Dallas
+                </div>
+                <div class="col-xs-4">TX
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('San Jose, CA')" id="location">
+                <div class="col-xs-8">San Jose
+                </div>
+                <div class="col-xs-4">CA
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Indianapolis, IN')" id="location">
+                <div class="col-xs-8">Indianapolis
+                </div>
+                <div class="col-xs-4">IN
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Jacksonville, FL')" id="location">
+                <div class="col-xs-8">Jacksonville
+                </div>
+                <div class="col-xs-4">FL
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('San Francisco, CA')" id="location">
+                <div class="col-xs-8">San Francisco
+                </div>
+                <div class="col-xs-4">CA
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Austin, TX')" id="location">
+                <div class="col-xs-8">Austin
+                </div>
+                <div class="col-xs-4">TX
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Columbus, OH')" id="location">
+                <div class="col-xs-8">Columbus
+                </div>
+                <div class="col-xs-4">OH
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Fort Worth, NY')" id="location">
+                <div class="col-xs-8">Fort Worth
+                </div>
+                <div class="col-xs-4">NY
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Louisville-Jefferson, NY')" id="location">
+                <div class="col-xs-8">Louisville-Jefferson
+                </div>
+                <div class="col-xs-4">NY
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Charlotte, NC')" id="location">
+                <div class="col-xs-8">Charlotte
+                </div>
+                <div class="col-xs-4">NC
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Detroit, MI')" id="location">
+                <div class="col-xs-8">Detroit
+                </div>
+                <div class="col-xs-4">MI
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('El Paso, TX')" id="location">
+                <div class="col-xs-8">El Paso
+                </div>
+                <div class="col-xs-4">TX
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Memphis, TN')" id="location">
+                <div class="col-xs-8">Memphis
+                </div>
+                <div class="col-xs-4">TN
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Nashville-Davidson, TN')" id="location">
+                <div class="col-xs-8">Nashville-Davidson
+                </div>
+                <div class="col-xs-4">TN
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Baltimore, MD')" id="location">
+                <div class="col-xs-8">Baltimore
+                </div>
+                <div class="col-xs-4">MD
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Boston, MA')" id="location">
+                <div class="col-xs-8">Boston
+                </div>
+                <div class="col-xs-4">MA
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Seattle, WA')" id="location">
+                <div class="col-xs-8">Seattle
+                </div>
+                <div class="col-xs-4">WA
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Washington, DC')" id="location">
+                <div class="col-xs-8">Washington
+                </div>
+                <div class="col-xs-4">DC
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Denver, CO')" id="location">
+                <div class="col-xs-8">Denver
+                </div>
+                <div class="col-xs-4">CO
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Milwaukee, WI')" id="location">
+                <div class="col-xs-8">Milwaukee
+                </div>
+                <div class="col-xs-4">WI
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Portland, OR')" id="location">
+                <div class="col-xs-8">Portland
+                </div>
+                <div class="col-xs-4">OR
+                </div>
+            </div>
+            <div class="row white-hover" onclick="setlocation('Las Vegas, NV')" id="location">
+                <div class="col-xs-8">Las Vegas
+                </div>
+                <div class="col-xs-4">NV
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <input name="location" value="PICK YOUR CITY" type="button" class="input" id="location-value" onclick="opencities()">
+        <h3 class="h3">CARD INFORMATION</h3>
+        <input name="credit-number" placeholder="CARD NUMBER" type="text" class="input">
+        <input name="credit-name" placeholder="NAME ON CARD" type="text" class="input">
+        <input name="expiration" placeholder="EXPIRATION DATE" type="text" class="input">
+        <input name="security" placeholder="SECURITY CODE" type="text" class="input margin-bottom">
+        <a class="submit explore" href="parties.html">EXPLORE</a>
+    </form>
+
+</body>
+
+</html>

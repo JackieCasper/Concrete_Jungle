@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/background.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes">
+</head>
+
+<body class="home">
+    <div id="vph-center">
+        <div class="container home-margin">
+            <div class="container-fluid home-logo"><img class="home-logo" src="img/logo/cj_logo_mobile.svg"> </div>
+            <div class="container-fluid home-logo"><img class="home-logo-type" src="img/logo/cj_logo_type.svg"> </div>
+
+            <div class="row button-row">
+                <div class="col-sm-6 button-home">
+                    <button class="button-home" onclick="OpenSignup()"> SIGN UP</button>
+                </div>
+                <div class="col-sm-6 button-home">
+                    <button class="button-home" onclick="OpenLogin()"> LOG IN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form class="container home-form" id="sign-up" name="sign-up" method="post">
+        <h3 class="h3">Sign Up </h3>
+        <input name="email" placeholder="EMAIL" type="email" class="input">
+        <input name="password" placeholder="PASSWORD" type="password" class="input">
+        <input name="confirm_password" placeholder="RE-ENTER PASSWORD" type="password" class="input">
+        <a class="submit" href="profile.html">SIGN UP</a>
+    </form>
+    <form class="container home-form" id="log-in" name="log-in" method="post">
+        <h3 class="h3">Log In</h3>
+        <input name="email" placeholder="EMAIL" type="email" class="input">
+        <input name="password" placeholder="PASSWORD" type="password" class="input">
+
+
+        <a class="submit" href="parties.html">LOG IN</a>
+
+    </form>
+
+</body>
+
+</html>

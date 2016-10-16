@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="fonts/stylesheet.css" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="css/background.css">
+    <meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes">
+
+</head>
+
+<body class="about">
+    <script>
+        initMap();
+    </script>
+
+    <form class="container">
+        <h3 class="h3">ABOUT THE PARTY</h3>
+        <label class="photo-upload party" for="image-upload">
+            <p>UPLOAD IMAGE</p>
+        </label>
+        <input type="file" name="photo-upload" id="image-upload" class="image-upload">
+        <input name="party-name" placeholder="NAME OF THE PARTY" type="text" class="input">
+        <input name="party-theme" placeholder="THEME" type="text" class="input">
+
+        <textarea name="description" placeholder="DESCRIPTION" class="input"></textarea>
+        <input name="date" placeholder="DATE" type="date" class="input">
+        <input name="address" placeholder="LOCATION" type="text" class="input" id="location">
+        <div class="map" id="map">
+        </div>
+        <h3 class="h3">BUDGET</h3>
+        <div class="row budgets">
+            <div class="col-sm-4">
+                <div class="party-container">
+                    <div style="background-image:url(/Concrete_Jungle/img/host/tumblr_inline_nokka6HSxx1qgrmiw_500.jpg)" class="budget-img"></div>
+                    <h3 class="h3 people-copy">budget: $100</h3>
+                    <p class="people-copy">PEOPLE: 20-40</p>
+                    <div class="party-buttons">
+                        <input name="attend" value="CHOOSE" type="button" class="submit choose">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="party-container">
+                    <div style="background-image:url(/Concrete_Jungle/img/host/img_5626.jpg)" class="budget-img"></div>
+                    <h3 class="h3 people-copy">budget: $150</h3>
+                    <p class="people-copy">PEOPLE: 40-60</p>
+                    <div class="party-buttons">
+                        <input name="attend" value="CHOOSE" type="button" class="submit choose">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="party-container">
+                    <div style="background-image:url(/Concrete_Jungle/img/host/tumblr_mbxzqlHLTQ1ri3jg3o1_1280.jpg)" class="budget-img"></div>
+                    <h3 class="h3 people-copy">budget: $250</h3>
+                    <p class="people-copy">PEOPLE: 60-100</p>
+                    <div class="party-buttons">
+                        <input name="attend" value="CHOOSE" type="button" class="submit choose">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <input name="submit" value="HOST" type="submit" class="submit host">
+        </div>
+
+
+
+    </form>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFscIGAalIb7Hzu6Ms_mJtBJvz2j_2ugE&libraries=places&callback=initMap" async defer></script>
+</body>
+
+</html>
